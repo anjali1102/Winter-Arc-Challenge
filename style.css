@@ -1,0 +1,25 @@
+body {
+  background-image: url('https://i.pinimg.com/564x/25/9b/88/259b882a7aef5faf1e19471f85300302.jpg');
+}
+.habit-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  gap: 15px;
+}
+.day-cell {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.day-cell.checked {
+  font-size: 32px;
+  background: #a8b5e0;
+  border: #a8b5e0;
+}
+.day-cell.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
