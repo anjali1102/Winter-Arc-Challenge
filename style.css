@@ -1,12 +1,15 @@
 body {
-  background-image: url('https://i.pinimg.com/564x/25/9b/88/259b882a7aef5faf1e19471f85300302.jpg');
+  background-image: url("https://i.pinimg.com/564x/25/9b/88/259b882a7aef5faf1e19471f85300302.jpg");
 }
-.habit-grid {
+.habit-grid-nov {
   display: grid;
   grid-template-columns: repeat(7, 40px);
   gap: 15px;
 }
-.day-cell {
+.novMonth-cell {
+  justify-content: center;
+  display: flex;
+  padding: 0.2px;
   width: 50px;
   height: 50px;
   background-color: white;
@@ -14,12 +17,17 @@ body {
   cursor: pointer;
   border-radius: 50%;
 }
-.day-cell.checked {
-  font-size: 32px;
-  background: #a8b5e0;
-  border: #a8b5e0;
+.novMonth-cell.checked {
+  background: #73ea9f;
+  border: #73ea9f;
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
 }
-.day-cell.disabled {
+.novMonth-cell.disabled {
   cursor: not-allowed;
   opacity: 0.4;
+}
+#november-div {
+  padding-bottom: 2rem;
 }
